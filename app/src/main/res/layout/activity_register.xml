@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.arash.saeedidairy.Register">
+
+    <android.support.v7.widget.Toolbar
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registertoolbar"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"/>
+
+        <com.example.arash.saeedidairy.custom.PersianTextyekan
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثبت نام"
+            android:textColor="#fff"
+            android:layout_gravity="right"
+            android:textSize="16dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_marginTop="40px"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:id="@+id/registerlogo"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30px"
+                android:id="@+id/cardregister"
+                app:cardElevation="@dimen/activity_horizontal_margin"
+                app:contentPadding="@dimen/activity_horizontal_margin"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin"
+
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="نام کاربری"
+                            android:id="@+id/usernameregister"
+                            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="پسورد"
+                            android:inputType="number"
+                            android:id="@+id/passwordregister"
+                            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="شماره تماس"
+                            android:inputType="number"
+                            android:id="@+id/phoneregister"
+                            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:text="ثبت نام"
+                        android:id="@+id/registerbtn"/>
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

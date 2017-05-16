@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="اطلاعات تماس">
+            <menu>
+
+    <item android:title="درباره ما" android:id="@+id/aboutus" android:icon="@drawable/about_icon"/>
+    <item android:title="تماس با ما" android:id="@+id/contactus" android:icon="@drawable/contact_icon"/>
+
+            </menu>
+        </item>
+
+    <item android:title="خروج" android:id="@+id/exit" android:icon="@drawable/exit_icon"/>
+
+
+
+    </group>
+</menu>

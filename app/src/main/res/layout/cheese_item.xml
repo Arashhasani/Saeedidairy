@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/liner"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:cardElevation="@dimen/activity_horizontal_margin"
+        app:cardCornerRadius="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:id="@+id/cheese_image_item"/>
+
+
+        <com.example.arash.saeedidairy.custom.PersianFontmorvarid
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="نام"
+            android:layout_gravity="right"
+            android:id="@+id/cheese_name_item"
+            android:layout_toLeftOf="@+id/cheese_image_item"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"/>
+
+        </RelativeLayout
+>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

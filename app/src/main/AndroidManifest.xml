@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arash.saeedidairy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menupages.AboutUs" />
+        <activity android:name=".menupages.ContactUs" />
+        <activity android:name=".Cheese.MainCheese" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".dough.MainDough" />
+        <activity android:name=".Milk.MainMilk" />
+        <activity android:name=".yogurt.MainYogurt" />
+        <activity android:name=".ProductPages.MilkPages.MilkLowFat" />
+        <activity android:name=".ProductPages.MilkPages.MilkCheesFat" />
+        <activity android:name=".ProductPages.MilkPages.MilkFullFat" />
+        <activity android:name=".ProductPages.MilkPages.CheeseLawFat" />
+        <activity android:name=".ProductPages.MilkPages.CheeseCheesFat" />
+        <activity android:name=".ProductPages.MilkPages.CheeseFullFat" />
+        <activity android:name=".ProductPages.MilkPages.YagurtLawFat" />
+        <activity android:name=".ProductPages.MilkPages.YagurtCheesFat" />
+        <activity android:name=".ProductPages.MilkPages.YagurtFullFat" />
+        <activity android:name=".ProductPages.MilkPages.DoughLawFat" />
+        <activity android:name=".ProductPages.MilkPages.DoughCheesFat" />
+        <activity android:name=".ProductPages.MilkPages.DoughFullFat"></activity>
+    </application>
+
+</manifest>

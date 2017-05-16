@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.example.arash.saeedidairy.SplashScreen">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginTop="40px"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:id="@+id/splashlogo"
+        />
+
+    <com.example.arash.saeedidairy.custom.PersianTextyekan
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نرم افزار لبنیات سعیدی"
+        android:layout_gravity="center"
+        android:id="@+id/spalshtext"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textSize="30px"
+        android:textColor="#000" />
+
+    <com.example.arash.saeedidairy.custom.PersianFontmorvarid
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لطفا منتظر بمانید ... "
+        android:layout_gravity="center"
+        android:id="@+id/splashwait"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textSize="25px"
+        android:textColor="#000" />
+
+    <view
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        class="com.ldoublem.loadingviewlib.LVBlock"
+        android:id="@+id/block"
+        android:layout_gravity="center"/>
+
+
+    <!--<ProgressBar-->
+        <!--android:layout_width="100px"-->
+        <!--android:layout_height="100px"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/splashprogress"-->
+        <!--android:layout_marginTop="@dimen/activity_horizontal_margin"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
